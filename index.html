@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="general-heading">Форми</h1>
+        <div class="first-two-forms">
+            <div class="simple-form" id="1">
+                <h2 class="form-heading">01. проста форма</h2>
+                <form class="simple-forma" action="post">
+                    <input class="entername" type="text" name="name" id="entername" placeholder="Введіть ім’я">
+                    <input type="email" name="email" id="enter-email" placeholder="Email">
+                    <select class="simple-select" name="choose-the-city" id="take-city">
+                        <option style="display: none;" value="" selected disabled>Ваше місто</option>
+                        <option value="vinitsa">Вінниця</option>
+                        <option value="montreal">Монтреал</option>
+                        <option value="dubai">Дубай</option>
+                    </select>
+                    <textarea class="big-place-for-text" name="textarea" id="textarea" placeholder="Email"></textarea>
+                    <button class="button" id="simple-button" type="submit">Зареєструватися</button>
+                </form>
+            </div>
+            <div class="fixed-form" id="6">
+                <h2 class="form-heading">06. Фіксована форма</h2>
+                <form class="fixed-forma" action="post">
+                    <p class="login-box"><input id="login" type="text">
+                        <lable class="label-for-login">Логін</lable>
+                    </p>
+                    <p class="password-box"><input class="fixed-password fixed-password-eye" id="password"
+                            type="password" maxlength="8">
+                        <lable class="label-for-password">Пароль</lable>
+                    </p>
+                    <a class="forgot-password" href="#">Забули пароль?</a>
+                    <p class="checkbox-box">
+                        <input class="defolt-behavior-input-chekbox" type="checkbox" name="checkbox6" id="checkbox6">
+                        <lable for="checkbox6">Запам’ятати пароль</lable>
+                    </p>
+                    <button class="button" type="submit">Увійти</button>
+                </form>
+            </div>
+        </div>
+        <hr class="zone-demarcation-line">
+        <div class="elems">
+            <h2 class="form-heading">02. елементи</h2>
+            <div class="elems-container">
+                <form action="main.php" method="post" class="radio-and-chekbox">
+                    <div class="radio">
+                        <p class="nova-posta defolt-behavior"><input class="nova-post-radio defolt-behavior-input-radio"
+                                type="radio" name="radio1" id="radio1" class="radio1"><label for="radio1">Нова
+                                Пошта</label></p>
+                        <p class="curryer defolt-behavior"><input class="сourier defolt-behavior-input-radio"
+                                type="radio" name="radio2" id="radio2" class="radio2"><label for="radio2">Кур’єр</label>
+                        </p>
+                        <p class="samoviviz disabled"><input class="radio-disabled" type="radio" name="radio3"
+                                id="radio3" class="radio3" disabled><label for="radio3">Самовивіз</label></p>
+                    </div>
+                    <div class="chekboxs">
+                        <p class="politics-and-terms defolt-behavior"><input
+                                class="nova-post-checkbox defolt-behavior-input-chekbox" type="checkbox"
+                                name="checkbox1" id="checkbox1" class="checkbox1"><label for="checkbox1">Нова
+                                Пошта</label></p>
+                        <p class="sogl defolt-behavior"><input class="сourier defolt-behavior-input-chekbox"
+                                type="checkbox" name="checkbox2" id="checkbox2" class="checkbox2"><label
+                                for="checkbox2">Кур’єр</label></p>
+                        <p class="get-news disabled"><input class="checkbox-disabled" type="checkbox" name="checkbox3"
+                                id="checkbox3" class="checkbox3" disabled><label for="checkbox2">Самовивіз</label></p>
+                    </div>
+                </form>
+                <form action="main.php" method="post" class="filter">
+                    <p class="status"><span class="filter-item-heading">Статус</span><input
+                            class="defolt-behavior-input-chekbox" type="checkbox" name="new-update"
+                            id="new-update"><label for="new-update">Новинки</label><input
+                            class="defolt-behavior-input-chekbox" type="checkbox" name="actions" id="actions"><label
+                            for="actions">Акційні товари</label><input class="defolt-behavior-input-chekbox"
+                            type="checkbox" name="mega-sell" id="mega-sell"><label for="mega-sell">Розпродаж</label></p>
+                    <p class="date"><span class="filter-item-heading">Дата</span><input type="date" name="date"
+                            id="date"></p>
+                </form>
+            </div>
+        </div>
+        <hr class="zone-demarcation-line">
+        <h2 class="form-heading">03. стилізовані чекбокси</h2>
+        <form method="post" action="main.php" class="stylized_checboxs">
+            <div class="stylized-radios">
+                <p class="stilized-radio"><input type="radio" name="male-chekbox" id="male"><label class="male-label"
+                        for="male">Чоловік</label></p>
+                <p class="stilized-radio"><input type="radio" name="male-chekbox" id="female"><label
+                        class="female-label" for="female">Жінка</label></p>
+            </div>
+            <div class="stylized-checkboxs">
+                <p class="stilized-checkbox"><input type="checkbox" name="news-sender-subscription"
+                        id="news-sender-subscription"><label class="news-sender-subscription-label"
+                        for="news-sender-subscription">Отримувати новини</label></p>
+                <p class="stilized-checkbox"><input type="checkbox" name="buy-sossege" id="buy-sossege"><label
+                        class="buy-sossege" for="buy-sossege">Купити додому ковбаси</label></p>
+                <p class="stilized-checkbox"><input type="checkbox" name="vkl" id="vkl"><label class="vkl"
+                        for="vkl">Включити світло</label></p>
+            </div>
+        </form>
+        <hr class="zone-demarcation-line">
+        <h2 class="form-heading">04. форма таблицею</h2>
+        <form method="post" action="main.php" class="form-table">
+            <h3 class="form-table__heading-h3">Заповніть усі необхідні поля</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>ФІО:</td>
+                        <td><input class="entername" type="text" name="name" id="entername" placeholder="Введіть ім’я"></td>
+                    </tr>
+                    <tr>
+                        <td>Пароль:</td>
+                        <td><input class="entername" type="password" name="name" id="entername" placeholder="Введіть не менше 6 символів" min="6"></td>
+                    </tr>
+                    <tr>
+                        <td>Місто:</td>
+                        <td>
+                            <select class="simple-select" name="choose-the-city" id="take-city">
+                            <option style="display: none;" value="" selected disabled>Ваше місто</option>
+                            <option value="vinitsa">Хмельницький</option>
+                            <option value="montreal">Монтреал</option>
+                            <option value="dubai">Дубай</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr class="stat">
+                        <td>Стать:</td>
+                        <td>
+                            <p class="nova-posta defolt-behavior"><input class="nova-post-radio defolt-behavior-input-radio"
+                                type="radio" name="radio1" id="radio1" class="radio1"><label for="radio1">Чоловік</label></p>
+                        <p class="curryer defolt-behavior"><input class="сourier defolt-behavior-input-radio"
+                                type="radio" name="radio2" id="radio2" class="radio2"><label for="radio2">Жінка</label>
+                        </p>
+                        </td>
+                    </tr>
+                    <tr class="file">
+                        <td>Фото:</td>
+                        <td><input class="choose-file-def" type="file" name="" id="choose-file"><label class="label-of-choose-file" for="choose-file">Виберіть файл</label></td>
+                    </tr>
+                    <tr style="align-items: start;"> 
+                        <td style="padding-top: 20px;">Коментарій:</td>
+                        <td><textarea style="width: 331px; height: 141px;" class="big-place-for-text" name="textarea" id="textarea" placeholder="Введіть текст повідомлення"></textarea></td>
+                    </tr>
+                    <tr style="justify-content: flex-end;">
+                        <td style="width: 330px;"><button class="button" id="simple-button" type="submit">Зареєструватися</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
