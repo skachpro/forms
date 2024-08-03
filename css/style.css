@@ -301,7 +301,7 @@ input[type="email"]:focus {
     font-family: "Roboto";
 }
 
-.defolt-behavior-input-radio:focus::before {
+.defolt-behavior-input-radio:checked::before {
     content: "";
     position: absolute;
     border: none;
@@ -313,11 +313,11 @@ input[type="email"]:focus {
     background-color: #244dd7;
 }
 
-.defolt-behavior-input-chekbox:focus {
+.defolt-behavior-input-chekbox:checked {
     outline-color: #3e6aff;
 }
 
-.defolt-behavior-input-chekbox:focus::before {
+.defolt-behavior-input-chekbox:checked::before {
     content: "";
     position: absolute;
     border: none;
@@ -434,12 +434,12 @@ input[type="email"]:focus {
     background-repeat: no-repeat;
 }
 
-#male:focus {
+#male:checked {
     background-position: 12.5px -66.1px;
     border: 2px solid #3e6aff;
 }
 
-#male:focus+.male-label {
+#male:checked+.male-label {
     color: #3e6aff;
 }
 
@@ -449,12 +449,12 @@ input[type="email"]:focus {
     background-repeat: no-repeat;
 }
 
-#female:focus {
+#female:checked {
     background-position: -45px -73.3px;
     border: 2px solid #3e6aff;
 }
 
-#female:focus+.female-label {
+#female:checked+.female-label {
     color: #3e6aff;
 }
 
@@ -483,9 +483,9 @@ input[type="email"]:focus {
     background-color: #fff;
 } */
 
-#news-sender-subscription:focus,
-#buy-sossege:focus,
-#vkl:focus {
+#news-sender-subscription:checked,
+#buy-sossege:checked,
+#vkl:checked {
     background-color: #3e6aff;
     background-position: 21px -2px;
 }
