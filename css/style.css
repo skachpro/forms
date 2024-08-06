@@ -177,6 +177,11 @@ input {
     background-color: #07be51;
 }
 
+.fixed-forma{
+    position: fixed;
+    z-index: 2;
+}
+
 .fixed-forma {
     display: inline-block;
     padding: 45px 25px 20px 25px;
@@ -242,7 +247,8 @@ input {
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"]{
+    outline: none;
     background-color: #fff;
     border: 1px solid #ccc;
 }
@@ -250,7 +256,7 @@ input[type="email"] {
 
 input[type="text"]:focus,
 input[type="password"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus{
     border-color: #3e6aff;
     box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
     background-color: #fff;
@@ -412,6 +418,7 @@ input[type="email"]:focus {
 
 .male-label,
 .female-label {
+    padding: 20px;
     font-size: 16rem;
     color: #1f222c;
     font-weight: 700;
@@ -492,18 +499,21 @@ input[type="email"]:focus {
 
 .form-table{
     width: 50%;
+    margin-bottom: 90px;
 }
 
-table{
+.table5{
     width: 100%;
 }
 
+td:last-child{
+    width: 330px;
+}
+
 tbody tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 5px;
 }
+
 
 tbody tr>td {
     color: #1f222c;
@@ -512,6 +522,10 @@ tbody tr>td {
 
 .stat{
     width: 71.5%;
+}
+
+.stat td:first-child{
+    padding-bottom: 10px;
 }
 
 .stat td:last-child{
@@ -526,11 +540,8 @@ tbody tr>td {
     font-family: "Roboto";
 }
 
-.file{
-    justify-content: start;
-    gap: 240px;
-    padding-top: 20px;
-    padding-bottom: 25px;
+.file td{
+    padding-bottom: 10px;
 }
 
 
@@ -539,6 +550,7 @@ tbody tr>td {
 }
 
 .label-of-choose-file{
+    display: inline-block;
     padding: 10px 40px;
     border-radius: 3px;
     background-color: #3e6aff;
@@ -546,4 +558,328 @@ tbody tr>td {
     font-family: "Roboto";
     color: #fff;
     cursor: pointer;
+    transition: .3s;
+}
+
+.label-of-choose-file:hover{
+    background-color: #1b4ef4;
+}
+
+/* .forma5 tr:first-child{
+    margin-bottom: 30px;
+}
+
+.form5 input[type="text"],
+.form5 input[type="email"]{
+    padding-left: 15px;
+    border: 1px solid #b3b3b3;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.label-por{
+    position: relative;
+
+}
+
+.label-por .label-poa{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+#name-surname,
+#elektrona-posta{
+    margin-right: 15px;
+}
+
+#name-surname,
+#elektrona-posta,
+#telephone{
+    width: 220px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.form-heading+.form-table__heading-h3{
+    padding-bottom: 20px;
+}
+
+option[value="your-country"]{
+    display: none;
+}
+
+#your-country{
+    appearance: none;
+    padding-left: 15px;
+    width: 220px;
+    height: 41px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.tbody{
+    border-top: 1px solid #000;
+    border-bottom:  1px solid #000;
+}
+
+.tbody tr:first-child {
+    box-sizing: content-box;
+}
+
+.tbody td[colspan="2"] input{
+    width: 100%;
+}
+
+.tbody td[colspan="2"]{
+    position: relative;
+}
+
+.tbody td[colspan="2"] label{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+} */
+
+/* .table2{
+    display: table;
+}
+
+.stroke{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+    position: relative;
+}
+
+.stroke:not(:nth-child(4)) .cell label{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.def-input5{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 220px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.stroke .cell:not(:last-child){
+    margin-right: 15px;
+}
+
+#your-country{
+    appearance: none;
+    padding-left: 15px;
+    width: 220px;
+    height: 41px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#checkbox5{
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.left-button,
+.right-button{
+    appearance: none;
+    padding: 15px 0;
+    width: 180px;
+}
+
+.left-button{
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #85868d;
+}
+
+.right-button{
+/*     float: right; 
+    border-radius: 3px;
+    background-color: #12d661;
+    border: none;
+    color: #fff;
+} */
+
+.forma5{
+    width: 680px;
+}
+
+.tbody{
+    padding: 30px 0;
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.forma5 th,
+.forma5 td{
+    position: relative;
+}
+
+.forma5 th label,
+.forma5 td label{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 13rem;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.forma5 th input[type="text"],
+.forma5 td input[type="text"],
+.forma5 th input[type="email"]{
+    padding: 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form5{
+    position: relative;
+}
+
+.forma5{
+    position: absolute;
+    left: -25px;
+}
+
+.form5 tr:first-child th{
+    width: 220px;
+}
+
+.form5 tr:first-child th input{
+    width: 100%;
+}
+
+
+.form5 tr td{
+    width: 220px;
+}
+
+.form5 tr td input{
+    width: 100%;
+}
+
+#adress{
+    width: 450px;
+}
+
+#your-country{
+    position: relative;
+    appearance: none;
+    padding: 15px;
+    width: 220px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.left-button,
+.right-button{
+    appearance: none;
+    padding: 15px 0;
+    width: 180px;
+}
+
+.left-button{
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #85868d;
+    transition: .3s;
+}
+
+.left-button:hover{
+    background-color: #12d661;
+    border-color: #fff;
+    color: #fff;
+}
+
+.right-button-cell{
+    position: relative;
+}
+
+.right-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 3px;
+    background-color: #12d661;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.right-button:hover{
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
+    background-color: #07be51;
+}
+
+
+.lastcheckbox5{
+    position: relative;
+    text-align: bottom;
+}
+
+#lastcheckbox5{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#lastcheckbox5:checked:before{
+    content: "";
+    position: absolute;
+    border: none;
+    border-left: 3px solid #244dd7;
+    border-bottom: 3px solid #244dd7;
+    top: 2.5px;
+    left: 1.5px;
+    width: 9px;
+    height: 4px;
+    transform: rotate(-45deg);
+}
+
+.label-por{
+    position: relative;
+}
+
+.label-por::after{
+    content: url(../img/select-minimal.png);
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
 }

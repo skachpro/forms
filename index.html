@@ -108,51 +108,188 @@
         <h2 class="form-heading">04. форма таблицею</h2>
         <form method="post" action="main.php" class="form-table">
             <h3 class="form-table__heading-h3">Заповніть усі необхідні поля</h3>
-            <table>
+            <table class="table5">
                 <tbody>
                     <tr>
-                        <td>ФІО:</td>
-                        <td><input class="entername" type="text" name="name" id="entername" placeholder="Введіть ім’я"></td>
+                        <td><label for="entername">ФІО:</label></td>
+                        <td><input class="entername" type="text" name="name" id="entername" placeholder="Введіть ім’я">
+                        </td>
                     </tr>
                     <tr>
                         <td>Пароль:</td>
-                        <td><input class="entername" type="password" name="name" id="entername" placeholder="Введіть не менше 6 символів" min="6"></td>
+                        <td><input class="entername" type="password" name="name" id="entername"
+                                placeholder="Введіть не менше 6 символів" min="6"></td>
                     </tr>
                     <tr>
                         <td>Місто:</td>
                         <td>
                             <select class="simple-select" name="choose-the-city" id="take-city">
-                            <option style="display: none;" value="" selected disabled>Ваше місто</option>
-                            <option value="vinitsa">Хмельницький</option>
-                            <option value="montreal">Монтреал</option>
-                            <option value="dubai">Дубай</option>
-                        </select>
-                    </td>
+                                <option style="display: none;" value="" selected disabled>Ваше місто</option>
+                                <option value="vinitsa">Хмельницький</option>
+                                <option value="montreal">Монтреал</option>
+                                <option value="dubai">Дубай</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr class="stat">
-                        <td>Стать:</td>
+                        <td><label for="">Стать:</label></td>
                         <td>
-                            <p class="nova-posta defolt-behavior"><input class="nova-post-radio defolt-behavior-input-radio"
-                                type="radio" name="radio1" id="radio1" class="radio1"><label for="radio1">Чоловік</label></p>
-                        <p class="curryer defolt-behavior"><input class="сourier defolt-behavior-input-radio"
-                                type="radio" name="radio2" id="radio2" class="radio2"><label for="radio2">Жінка</label>
-                        </p>
+                            <p class="nova-posta defolt-behavior"><input
+                                    class="nova-post-radio defolt-behavior-input-radio" type="radio" name="radio1"
+                                    id="radio1" class="radio1"><label for="radio1">Чоловік</label></p>
+                            <p class="curryer defolt-behavior"><input class="сourier defolt-behavior-input-radio"
+                                    type="radio" name="radio2" id="radio2" class="radio2"><label
+                                    for="radio2">Жінка</label>
+                            </p>
                         </td>
                     </tr>
                     <tr class="file">
-                        <td>Фото:</td>
-                        <td><input class="choose-file-def" type="file" name="" id="choose-file"><label class="label-of-choose-file" for="choose-file">Виберіть файл</label></td>
+                        <td><label for="">Фото:</label></td>
+                        <td><input class="choose-file-def" type="file" name="" id="choose-file"><label
+                                class="label-of-choose-file" for="choose-file">Виберіть файл</label></td>
                     </tr>
-                    <tr style="align-items: start;"> 
-                        <td style="padding-top: 20px;">Коментарій:</td>
-                        <td><textarea style="width: 331px; height: 141px;" class="big-place-for-text" name="textarea" id="textarea" placeholder="Введіть текст повідомлення"></textarea></td>
+                    <tr class="textarea">
+                        <td style="padding-top: 20px;"><label for="">Коментарій:</label></td>
+                        <td><textarea style="width: 331px; height: 141px;" class="big-place-for-text" name="textarea"
+                                id="textarea" placeholder="Введіть текст повідомлення"></textarea></td>
                     </tr>
-                    <tr style="justify-content: flex-end;">
-                        <td style="width: 330px;"><button class="button" id="simple-button" type="submit">Зареєструватися</button></td>
+                    <tr>
+                        <td></td>
+                        <td><button class="button" id="simple-button" type="submit">Зареєструватися</button></td>
                     </tr>
                 </tbody>
             </table>
         </form>
+        <div>
+            <h2 class="form-heading">04. форма таблицею</h2>
+            <h3 class="form-table__heading-h3">Заповніть усі необхідні поля</h3>
+            <form class="form5" action="main.php" method="post">
+                <table class="forma5" cellspacing="25">
+                    <thead class="thead">
+                        <tr>
+                            <th class="surname-name">
+                                <input type="text" id="name-surname">
+                                <label for="name-surname">Прізвище та ім’я</label>
+                            </th>
+                            <th class="email  ">
+                                <input type="text" id="elektrona-posta">
+                                <label for="elektrona-posta">Ел. пошта</label>
+                            </th>
+                            <th class="telephone  ">
+                                <input type="text" id="telephone">
+                                <label for="telephone">Телефон</label>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="label-por">
+                                <select name="your-country" id="your-country">
+                                    <option value="your-country" selescted>Ваша країна</option>
+                                    <option value="en">England</option>
+                                    <option value="ger">Germany</option>
+                                    <option value="ua">Ukraine</option>
+                                </select>
+                                <label for="name-surname">Країна</label>
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="" id="adress">
+                                <label for="adress">Адреса</label>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="city">
+                                <input type="text" id="name-surname">
+                                <label for="city">Місто</label>
+                            </td>
+                            <td class="building  ">
+                                <input type="text" id="elektrona-posta">
+                                <label for="elektrona-posta">Будинок</label>
+                            </td>
+                            <td class="telephone  ">
+                                <input type="text" id="telephone">
+                                <label for="telephone">Поштовий індекс</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lastcheckbox5" colspan="2">
+                                <input type="checkbox" name="" id="lastcheckbox5">
+                                <label style="position: static;" for="lastcheckbox5">Я погоджуюсь з правилами оплати та доставки товару</label>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="tfoot">
+                        <tr>
+                            <td class="left-button-cell"><button class="left-button">Повернутися назад</button></td>
+                            <td></td>
+                            <td class="right-button-cell"><button class="right-button">Оформити покупку</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- <div class="table2">
+                    <div class="stroke">
+                        <div class="cell">
+                            <input class="def-input5" type="text" name="surname-name" id="surname-name">
+                            <label for="surname-name">Прізвище та ім’я</label>
+                        </div>
+                        <div class="cell">
+                            <input class="def-input5" type="email" name="email5" id="email5">
+                            <label for="email5">Ел. пошта</label>
+                        </div>
+                        <div class="cell">
+                            <input class="def-input5" type="text" name="phone-number5" id="phone-number5">
+                            <label for="phone-number5">Телефон</label>
+                        </div>
+                    </div>
+                    <div class="stroke">
+                        <div class="cell">
+                            <select name="your-country" id="your-country">
+                                <option value="your-country" selected>Ваша країна</option>
+                                <option value="indonesia">Індонезія</option>
+                                <option value="Mntngro">Чорногорія</option>
+                                <option value="ChechSlovak">Чехословакія</option>
+                            </select>
+                        </div>
+                        <div class="cell" aria-colspan="2">
+                            <input type="text" name="adress" id="adress">
+                            <label for="adress">Адреса</label>
+                        </div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="stroke table5-more-data-inputs">
+                        <div class="cell">
+                            <input class="def-input5" type="text" name="city" id="city">
+                            <label for="city">Місто</label>
+                        </div>
+                        <div class="cell">
+                            <input class="def-input5" type="text" name="building" id="building">
+                            <label for="building">Будинок</label>
+                        </div>
+                        <div class="cell">
+                            <input class="def-input5" type="text" name="post-index" id="post-index">
+                            <label for="post-index">Поштовий індекс</label>
+                        </div>
+                    </div>
+                    <div class="stroke table5-checkbox">
+                        <div class="cell">
+                            <input type="checkbox" name="checkbox" id="checkbox5">
+                            <label for="checkbox5">Я погоджуюсь з правилами оплати та доставки товару</label>
+                        </div>
+                    </div>
+                    <div class="stroke tables-buttons">
+                        <div class="cell">
+                            <button class="left-button">Повернутися назад</button>
+                        </div>
+                        <div class="cell right-button-cell">
+                            <button class="right-button">Оформити покупку</button>
+                        </div>
+                    </div>
+                </div> -->
+            </form>
+        </div>
     </div>
 </body>
 
