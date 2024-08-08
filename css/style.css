@@ -438,15 +438,17 @@ input[type="email"]:focus{
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #ccc;
+    background-image: url(../img/calendar.png);
+    background-repeat: no-repeat;
+    background-position: 133px 50%;
     outline: none;
 }
 
-#date::-webkit-calendar-picker-indicator {
-    padding-right: 15px;
-    width: 18px;
-    height: 18px;
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
-
 .stylized_checboxs {
     display: flex;
     justify-content: space-between;
@@ -970,7 +972,9 @@ option[value="your-country"]{
     transform: rotate(-45deg);
 }
 
-.label-por{
+
+
+/* .label-por{
     position: relative;
 }
 
@@ -982,9 +986,17 @@ option[value="your-country"]{
     top: 50%;
     right: 15px;
     transform: translateY(-125%);
+} */
+
+#your-country{
+    position: relative;
 }
 
-
-#enter6{
-
+.selectar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/select-minimal.png);
+    background-repeat: no-repeat;
+    background-position: 183px 50%;
 }
