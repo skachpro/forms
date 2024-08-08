@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,13 +32,13 @@
             </div>
             <div class="fixed-form" id="6">
                 <h2 class="form-heading">06. Фіксована форма</h2>
-                <form class="fixed-forma" action="post">
+                <form class="fixed-forma close" action="post">
                     <p class="login-box"><input id="login" type="text">
-                        <lable class="label-for-login">Логін</lable>
+                        <lable for="login" class="label-for-login">Логін</lable>
                     </p>
                     <p class="password-box"><input class="fixed-password fixed-password-eye" id="password"
                             type="password" maxlength="8">
-                        <lable class="label-for-password">Пароль</lable>
+                        <lable for="password" class="label-for-password">Пароль</lable>
                     </p>
                     <a class="forgot-password" href="#">Забули пароль?</a>
                     <p class="checkbox-box">
@@ -53,13 +56,13 @@
                 <form action="main.php" method="post" class="radio-and-chekbox">
                     <div class="radio">
                         <p class="nova-posta defolt-behavior"><input class="nova-post-radio defolt-behavior-input-radio"
-                                type="radio" name="radio1" id="radio1" class="radio1"><label for="radio1">Нова
+                                type="radio" name="radio" id="radio1" class="radio1"><label for="radio1">Нова
                                 Пошта</label></p>
                         <p class="curryer defolt-behavior"><input class="сourier defolt-behavior-input-radio"
-                                type="radio" name="radio2" id="radio2" class="radio2"><label for="radio2">Кур’єр</label>
+                                type="radio" name="radio" id="radio2" class="radio2"><label for="radio2">Кур’єр</label>
                         </p>
                         <p class="samoviviz disabled"><input class="radio-disabled" type="radio" name="radio3"
-                                id="radio3" class="radio3" disabled><label for="radio3">Самовивіз</label></p>
+                                id="radio3" class="radio" disabled><label for="radio3">Самовивіз</label></p>
                     </div>
                     <div class="chekboxs">
                         <p class="politics-and-terms defolt-behavior"><input
@@ -111,13 +114,13 @@
             <table class="table5">
                 <tbody>
                     <tr>
-                        <td><label for="entername">ФІО:</label></td>
-                        <td><input class="entername" type="text" name="name" id="entername" placeholder="Введіть ім’я">
+                        <td><label for="entername1">ФІО:</label></td>
+                        <td><input class="entername" type="text" name="name" id="entername1" placeholder="Введіть ім’я">
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="">Пароль:</label></td>
-                        <td><input class="entername" type="password" name="name" id="entername"
+                        <td><label for="enter6">Пароль:</label></td>
+                        <td><input class="entername" type="password"  id="enter6"
                                 placeholder="Введіть не менше 6 символів" min="6"></td>
                     </tr>
                     <tr>
@@ -135,23 +138,23 @@
                         <td><label for="">Стать:</label></td>
                         <td>
                             <p class="nova-posta defolt-behavior"><input
-                                    class="nova-post-radio defolt-behavior-input-radio" type="radio" name="radio1"
+                                    class="nova-post-radio defolt-behavior-input-radio" type="radio" name="radio"
                                     id="radio1" class="radio1"><label for="radio1">Чоловік</label></p>
                             <p class="curryer defolt-behavior"><input class="сourier defolt-behavior-input-radio"
-                                    type="radio" name="radio2" id="radio2" class="radio2"><label
+                                    type="radio" name="radio" id="radio2" class="radio2"><label
                                     for="radio2">Жінка</label>
                             </p>
                         </td>
                     </tr>
                     <tr class="file">
-                        <td><label for="">Фото:</label></td>
+                        <td><label for="choose-file">Фото:</label></td>
                         <td><input class="choose-file-def" type="file" name="" id="choose-file"><label
                                 class="label-of-choose-file" for="choose-file">Виберіть файл</label></td>
                     </tr>
                     <tr class="textarea">
-                        <td style="padding-top: 20px;"><label for="">Коментарій:</label></td>
+                        <td style="padding-top: 20px;"><label for="textarea1">Коментарій:</label></td>
                         <td><textarea style="width: 331px; height: 141px;" class="big-place-for-text" name="textarea"
-                                id="textarea" placeholder="Введіть текст повідомлення"></textarea></td>
+                                id="textarea1" placeholder="Введіть текст повідомлення"></textarea></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -190,7 +193,7 @@
                                     <option value="ger">Germany</option>
                                     <option value="ua">Ukraine</option>
                                 </select>
-                                <label for="name-surname">Країна</label>
+                                <label for="your-country">Країна</label>
                             </td>
                             <td colspan="2">
                                 <input type="text" name="" id="adress">
@@ -200,20 +203,20 @@
                         </tr>
                         <tr>
                             <td class="city">
-                                <input type="text" id="name-surname">
+                                <input type="text" id="city">
                                 <label for="city">Місто</label>
                             </td>
-                            <td class="building  ">
-                                <input type="text" id="elektrona-posta">
-                                <label for="elektrona-posta">Будинок</label>
+                            <td class="building">
+                                <input type="text" id="building">
+                                <label for="building">Будинок</label>
                             </td>
-                            <td class="telephone  ">
-                                <input type="text" id="telephone">
-                                <label for="telephone">Поштовий індекс</label>
+                            <td class="telephone">
+                                <input type="text" id="post-index">
+                                <label for="post-index">Поштовий індекс</label>
                             </td>
                         </tr>
                         <tr class="sogl-checkbox">
-                            <td class="lastcheckbox5" colspan="2">
+                            <td style="display: flex; align-items: center; width: 200%; gap: 5px;" class="lastcheckbox5" colspan="2">
                                 <input type="checkbox" name="" id="lastcheckbox5">
                                 <label style="position: static;" for="lastcheckbox5">Я погоджуюсь з правилами оплати та доставки товару</label>
                             </td>
@@ -229,65 +232,6 @@
                         </tr>
                     </tfoot>
                 </table>
-                <!-- <div class="table2">
-                    <div class="stroke">
-                        <div class="cell">
-                            <input class="def-input5" type="text" name="surname-name" id="surname-name">
-                            <label for="surname-name">Прізвище та ім’я</label>
-                        </div>
-                        <div class="cell">
-                            <input class="def-input5" type="email" name="email5" id="email5">
-                            <label for="email5">Ел. пошта</label>
-                        </div>
-                        <div class="cell">
-                            <input class="def-input5" type="text" name="phone-number5" id="phone-number5">
-                            <label for="phone-number5">Телефон</label>
-                        </div>
-                    </div>
-                    <div class="stroke">
-                        <div class="cell">
-                            <select name="your-country" id="your-country">
-                                <option value="your-country" selected>Ваша країна</option>
-                                <option value="indonesia">Індонезія</option>
-                                <option value="Mntngro">Чорногорія</option>
-                                <option value="ChechSlovak">Чехословакія</option>
-                            </select>
-                        </div>
-                        <div class="cell" aria-colspan="2">
-                            <input type="text" name="adress" id="adress">
-                            <label for="adress">Адреса</label>
-                        </div>
-                        <div class="cell"></div>
-                    </div>
-                    <div class="stroke table5-more-data-inputs">
-                        <div class="cell">
-                            <input class="def-input5" type="text" name="city" id="city">
-                            <label for="city">Місто</label>
-                        </div>
-                        <div class="cell">
-                            <input class="def-input5" type="text" name="building" id="building">
-                            <label for="building">Будинок</label>
-                        </div>
-                        <div class="cell">
-                            <input class="def-input5" type="text" name="post-index" id="post-index">
-                            <label for="post-index">Поштовий індекс</label>
-                        </div>
-                    </div>
-                    <div class="stroke table5-checkbox">
-                        <div class="cell">
-                            <input type="checkbox" name="checkbox" id="checkbox5">
-                            <label for="checkbox5">Я погоджуюсь з правилами оплати та доставки товару</label>
-                        </div>
-                    </div>
-                    <div class="stroke tables-buttons">
-                        <div class="cell">
-                            <button class="left-button">Повернутися назад</button>
-                        </div>
-                        <div class="cell right-button-cell">
-                            <button class="right-button">Оформити покупку</button>
-                        </div>
-                    </div>
-                </div> -->
             </form>
         </div>
     </div>
