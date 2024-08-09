@@ -85,7 +85,8 @@ input {
 #entername1,
 #enter6,
 #enter-email,
-#take-city,
+#take-city1,
+#take-city3,
 #textarea,
 #textarea1,
 #simple-button,
@@ -98,6 +99,17 @@ input {
     box-sizing: border-box;
     outline: none;
 }
+
+
+#entername:focus,
+#entername1:focus,
+#enter6:focus,
+#enter-email:focus,
+#login:focus,
+#password:focus{
+    border: 1px solid #244dd7;
+}
+
 
 #entername::placeholder,
 #entername1::placeholder,
@@ -131,7 +143,8 @@ input {
 #entername1,
 #enter6,
 #enter-email,
-#take-city {
+#take-city1,
+#take-city3 {
     padding: 15px;
     width: 330px;
     border-radius: 3px;
