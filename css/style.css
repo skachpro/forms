@@ -81,6 +81,11 @@ input {
     font-weight: 700;
 }
 
+
+#your-country{
+    background-color: #fff;
+}
+
 #entername,
 #entername1,
 #enter6,
@@ -364,9 +369,13 @@ input[type="email"]:focus{
     border-radius: 16px;
     width: 8px;
     height: 8px;
-    top: 3.4px;
+    top: 3px;
     left: 3.4px;
     background-color: #244dd7;
+}
+
+.stat .defolt-behavior-input-radio:checked::before{
+    top: 3.4px;
 }
 
 .defolt-behavior-input-radio:checked{
