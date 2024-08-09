@@ -91,7 +91,7 @@ input {
 #enter6,
 #enter-email,
 #take-city1,
-#take-city3,
+#take-city4,
 #textarea,
 #textarea1,
 #simple-button,
@@ -149,7 +149,7 @@ input {
 #enter6,
 #enter-email,
 #take-city1,
-#take-city3 {
+#take-city4 {
     padding: 15px;
     width: 330px;
     border-radius: 3px;
