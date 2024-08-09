@@ -132,7 +132,7 @@ input {
 #enter6,
 #enter-email,
 #take-city {
-    height: 42px;
+    padding: 15px;
     width: 330px;
     border-radius: 3px;
     appearance: none;
@@ -323,7 +323,7 @@ input[type="email"]:focus{
 }
 
 .defolt-behavior-input-radio {
-    width: 14.4px;
+    width: 14px;
     height: 14px;
     border-radius: 7px;
     background-color: #ffffff;
@@ -353,18 +353,18 @@ input[type="email"]:focus{
     width: 8px;
     height: 8px;
     top: 2px;
-    left: 2.85px;
+    left: 2.5px;
     background-color: #244dd7;
 }
 
 .defolt-behavior-input-radio:checked{
     border: 1px solid #244dd7;
 }
-
+/* 
 #radio1{
     width: 15px;
 }
-
+ */
 .defolt-behavior-input-chekbox:checked {
     border: 1px solid #244dd7;
 }
@@ -375,10 +375,10 @@ input[type="email"]:focus{
     border: none;
     border-left: 2px solid #244dd7;
     border-bottom: 2px solid #244dd7;
-    top: 2.5px;
-    left: 1.5px;
-    width: 9px;
-    height: 4px;
+    top: 4px;
+    left: 3px;
+    width: 6px;
+    height: 2px;
     transform: rotate(-45deg);
 }
 
