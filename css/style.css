@@ -323,9 +323,9 @@ input[type="email"]:focus{
 }
 
 .defolt-behavior-input-radio {
-    width: 14px;
-    height: 14px;
-    border-radius: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
     position: relative;
@@ -349,11 +349,11 @@ input[type="email"]:focus{
     content: "";
     position: absolute;
     border: none;
-    border-radius: 8px;
+    border-radius: 16px;
     width: 8px;
     height: 8px;
-    top: 2px;
-    left: 2.5px;
+    top: 3.4px;
+    left: 3.4px;
     background-color: #244dd7;
 }
 
@@ -496,7 +496,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #male:checked {
-    background-position: 12.5px -65.3px;
+    background-position: 12.5px -65.4px;
     border: 2px solid #3e6aff;
 }
 
