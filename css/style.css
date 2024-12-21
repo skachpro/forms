@@ -303,6 +303,9 @@ input {
     color: #3e6aff;
     text-decoration: none;
 }
+.forgot-password:hover {
+    text-decoration: underline;
+}
 
 .checkbox-box {
     display: flex;
